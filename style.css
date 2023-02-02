@@ -1,4 +1,11 @@
 body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,4 +19,33 @@ body {
     flex-grow: 0;
     width: 500px;
     height: 500px;
+}
+#header {
+    background-color: rgb(83, 79, 79);
+}
+.sizeMenu {
+    background-color: rgb(226, 222, 222);
+    border: solid black;
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+.sizeMenu button {
+    background-color: rgb(226, 222, 222);
+    margin: 10px;
+    font-size: large;
+}
+.sizeMenu button:hover {
+    background-color: white;
+}
+.sizeButton {
+    background-color: rgb(83, 79, 79);
+    color: white;
+    width: 87.92px;
+    font-size: larger;
+}
+.sizeButton:hover {
+    background-color: white;
+    color: black;
 }
