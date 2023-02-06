@@ -22,30 +22,37 @@ body {
 }
 #header {
     background-color: rgb(83, 79, 79);
+    display: flex;
 }
-.sizeMenu {
+.sizeMenu, .colorMenu {
     background-color: rgb(226, 222, 222);
     border: solid black;
     display: none;
     flex-direction: column;
     width: fit-content;
     height: fit-content;
+    position: absolute;
+    margin: 0 20px;
 }
-.sizeMenu button {
+.sizeMenu button, .colorMenu button {
     background-color: rgb(226, 222, 222);
     margin: 10px;
     font-size: large;
 }
-.sizeMenu button:hover {
+.sizeMenu button:hover, .colorMenu button:hover {
     background-color: white;
 }
-.sizeButton {
+.button {
     background-color: rgb(83, 79, 79);
     color: white;
     width: 87.92px;
     font-size: larger;
+    margin: 0 20px;
 }
-.sizeButton:hover {
+.button:hover {
     background-color: white;
     color: black;
+}
+button {
+    cursor: pointer;
 }
